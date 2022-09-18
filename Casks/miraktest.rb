@@ -14,8 +14,11 @@ cask "miraktest" do
 
   app "MirakTest.app"
 
-  zap trash: [
+  zap pkgutil: [
     "~/Library/Caches/io.github.ci7lus.miraktest.helper.Renderer",
     "~/Library/Saved Application State/io.github.ci7lus.miraktest.savedState"
+  ]
+  zap trash: [
+    "~/Library/Application Support/MirakTest"
   ]
 end
