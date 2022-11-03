@@ -25,3 +25,5 @@ jobs:
     steps:
       - name: Install
         run: brew install --cask ci7lus/miraktest/miraktest
+      - name: Uninstall
+        run: brew uninstall miraktest
