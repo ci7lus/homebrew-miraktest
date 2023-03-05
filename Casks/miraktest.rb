@@ -1,10 +1,10 @@
 cask "miraktest" do
-  version "2.0.0-rc.4"
+  version "2.0.0"
 
   if Hardware::CPU.arm?
-    sha256 "c53d3314f26acc815cd058051c9056ab0047db5a6b241281b66e78891ab471f2"
+    sha256 "1cf14535bb4524197e6d03e0f33c595377a92b9086479f0404b5e327ee4e9b12"
   else
-    sha256 "c4be26af275ba29730b10d173992d85a492977ab1227e26001702b5d69809c26"
+    sha256 "95e4e1dba1d085f56ebbc544a5c66ee7631b4c0c35aba6b3337573517bdc3665"
   end
 
   url "https://github.com/ci7lus/MirakTest/releases/download/v#{version}/MirakTest-#{version}#{Hardware::CPU.arm? ? "-arm64" : ""}.dmg"
